@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo Mussatec</title>
+    <style>
+        :root {
+            --primary-blue: #0099ff;
+            --text-color: #555;
+            --bg-card: #f9f9f9;
+        }
+
+        .mussatec-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .mussatec-card {
+            flex: 1;
+            min-width: 320px;
+            max-width: 600px;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .mussatec-card h2 {
+            color: #444;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--primary-blue);
+            padding-bottom: 10px;
+        }
+
+        .mussatec-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 12px;
+        }
+
+        /* Variação para a lista de Grandeza Dimensional que é maior */
+        .list-two-cols {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .mussatec-list li {
+            position: relative;
+            padding-left: 30px;
+            color: var(--text-color);
+            line-height: 1.4;
+            font-size: 0.95rem;
+        }
+
+        .mussatec-list li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: var(--primary-blue);
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .mussatec-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="mussatec-container">
+    
+    <section class="mussatec-card">
+        <h2>Escopo de Fornecimento</h2>
+        <ul class="mussatec-list">
+            <li>Gravação de códigos nos equipamentos</li>
+            <li>Emissão de Certificados de Calibração com rastreabilidade a padrões nacionais</li>
+            <li>Disponibilidade de acesso online aos certificados e aos padrões utilizados</li>
+            <li>Gerenciamento dos vencimentos das calibrações realizadas</li>
+            <li>Ajustes nos instrumentos (quando passível de ajuste)</li>
+            <li>Verificação do estado do instrumento no recebimento</li>
+            <li>Software de gestão metrológica disponível sem custo para os clientes</li>
+            <li>Emissão de Certificados e disponibilização através de software</li>
+            <li>Avaliação de necessidade de manutenção</li>
+            <li>Comparação com critério de aceitação fornecido pelo cliente</li>
+        </ul>
+    </section>
+
+    <section class="mussatec-card">
+        <h2>Calibração Dimensional</h2>
+        <ul class="mussatec-list list-two-cols">
+            <li>Paquímetros</li>
+            <li>Medidor de Altura</li>
+            <li>Micrômetros</li>
+            <li>Medidores de Espessura</li>
+            <li>Régua Graduada</li>
+            <li>Lupas</li>
+            <li>Calibrador Tampão Roscado</li>
+            <li>Trenas</li>
+            <li>Desempeno de Granito</li>
+            <li>Relógio Comparador</li>
+            <li>Relógio Apalpador</li>
+            <li>Comparador de Diâmetro Interno</li>
+            <li>Calibrador de Folga</li>
+            <li>Calibrador de Raio</li>
+            <li>Calibrador de Rosca</li>
+            <li>Projetor de Perfil</li>
+            <li>Goniômetro</li>
+            <li>Transferidor de Grau</li>
+            <li>Microscópio</li>
+            <li>Calibrador Tampão</li>
+            <li>Calibrador Anel</li>
+            <li>Peneira Granulométrica</li>
+            <li>Esquadro</li>
+            <li>Contametro</li>
+            <li>Nível de Bolha</li>
+            <li>Calibre de Solda</li>
+            <li>Haste para Micrômetro</li>
+            <li>Rugosímetro</li>
+            <li>Lâminas de Espessura</li>
+            <li>Fita Perimétrica</li>
+            <li>Prumo</li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
