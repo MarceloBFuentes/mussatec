@@ -1,150 +1,467 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escopo Mussatec</title>
-    <style>
-        :root {
-            --primary-blue: #0099ff;
-            --text-color: #555;
-            --bg-card: #f9f9f9;
-        }
-
-        .mussatec-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 20px;
-            justify-content: center;
-        }
-
-        .mussatec-card {
-            flex: 1;
-            min-width: 320px;
-            max-width: 600px;
-            background: #fff;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-
-        .mussatec-card h2 {
-            color: #444;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid var(--primary-blue);
-            padding-bottom: 10px;
-        }
-
-        .mussatec-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 12px;
-        }
-
-        /* Variação para a lista de Grandeza Dimensional que é maior */
-        .list-two-cols {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
-
-        .mussatec-list li {
-            position: relative;
-            padding-left: 30px;
-            color: var(--text-color);
-            line-height: 1.4;
-            font-size: 0.95rem;
-        }
-
-        .mussatec-list li::before {
-            content: '✔';
-            position: absolute;
-            left: 0;
-            top: 0;
-            background-color: var(--primary-blue);
-            color: white;
-            width: 20px;
-            height: 20px;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-        }
-
-        @media (max-width: 768px) {
-            .mussatec-container {
-                flex-direction: column;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<div class="mussatec-container">
+<html class="wide wow-animation" lang="pt-BR">
+  <head>
+    <title>Mussatec Metrologia - Calibração e Manutenção</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
     
-    <section class="mussatec-card">
-        <h2>Escopo de Fornecimento</h2>
-        <ul class="mussatec-list">
-            <li>Gravação de códigos nos equipamentos</li>
-            <li>Emissão de Certificados de Calibração com rastreabilidade a padrões nacionais</li>
-            <li>Disponibilidade de acesso online aos certificados e aos padrões utilizados</li>
-            <li>Gerenciamento dos vencimentos das calibrações realizadas</li>
-            <li>Ajustes nos instrumentos (quando passível de ajuste)</li>
-            <li>Verificação do estado do instrumento no recebimento</li>
-            <li>Software de gestão metrológica disponível sem custo para os clientes</li>
-            <li>Emissão de Certificados e disponibilização através de software</li>
-            <li>Avaliação de necessidade de manutenção</li>
-            <li>Comparação com critério de aceitação fornecido pelo cliente</li>
-        </ul>
-    </section>
+    <meta name="description" content="A Mussatec Metrologia é um laboratório especializado em calibração, manutenção em instrumentos de medição e medição de peças e componentes, atuando com excelência em Monte Alto - SP.">
+    <meta property="og:title" content="Mussatec Metrologia - Calibração e Manutenção">
+    <meta property="og:description" content="Serviços metrológicos de excelência em calibração e manutenção de instrumentos de medição.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.seusite.com.br">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Mussatec Metrologia",
+      "image": "https://www.seusite.com.br/images/logo-default-480x80.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Julia Simongine Chiquitelli, 100",
+        "addressLocality": "Monte Alto",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "telephone": "+5516997707791"
+    }
+    </script>
 
-    <section class="mussatec-card">
-        <h2>Calibração Dimensional</h2>
-        <ul class="mussatec-list list-two-cols">
-            <li>Paquímetros</li>
-            <li>Medidor de Altura</li>
-            <li>Micrômetros</li>
-            <li>Medidores de Espessura</li>
-            <li>Régua Graduada</li>
-            <li>Lupas</li>
-            <li>Calibrador Tampão Roscado</li>
-            <li>Trenas</li>
-            <li>Desempeno de Granito</li>
-            <li>Relógio Comparador</li>
-            <li>Relógio Apalpador</li>
-            <li>Comparador de Diâmetro Interno</li>
-            <li>Calibrador de Folga</li>
-            <li>Calibrador de Raio</li>
-            <li>Calibrador de Rosca</li>
-            <li>Projetor de Perfil</li>
-            <li>Goniômetro</li>
-            <li>Transferidor de Grau</li>
-            <li>Microscópio</li>
-            <li>Calibrador Tampão</li>
-            <li>Calibrador Anel</li>
-            <li>Peneira Granulométrica</li>
-            <li>Esquadro</li>
-            <li>Contametro</li>
-            <li>Nível de Bolha</li>
-            <li>Calibre de Solda</li>
-            <li>Haste para Micrômetro</li>
-            <li>Rugosímetro</li>
-            <li>Lâminas de Espessura</li>
-            <li>Fita Perimétrica</li>
-            <li>Prumo</li>
-        </ul>
-    </section>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans:300,700,800%7COswald:300,400,500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+      /* Estilo extra para garantir o contraste no banner principal */
+      .swiper-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Escurece a imagem de fundo para o texto branco saltar */
+        z-index: 1;
+      }
+      .swiper-slide-caption {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="section page-header" data-type="anchor">
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-minimal" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-fixed" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
+                  <a class="rd-navbar-brand" href="index.html"><img src="images/logo-default-480x80.png" width="240" height="40" alt="Logo Mussatec Metrologia"></a>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#about-us">Sobre nós</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#company">Empresa</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#services">Serviços</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#contact-us">Contato</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
 
-</div>
+      <div class="swiper-container swiper-slider swiper-slider-minimal" id="home" data-loop="true" data-slide-effect="fade" data-autoplay="3500" data-simulate-touch="true">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-slide-bg="images/fotos/Mussatec-17-banner.jpg">
+            <div class="swiper-overlay"></div>
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="swiper-slide-text">
+                  <div class="text-large">Dedicado aos resultados</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-slide-bg="images/fotos/bannernovo.jpg">
+            <div class="swiper-overlay"></div>
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="swiper-slide-text">
+                  <div class="text-large">Soluções feitas de Forma Fácil</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-slide-bg="images/fotos/Mussatec-7-banner.jpg">
+            <div class="swiper-overlay"></div>
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="swiper-slide-text">
+                  <div class="text-large">O melhor do mercado</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination-outer container">
+          <div class="swiper-pagination swiper-pagination-modern swiper-pagination-marked" data-index-bullet="true"></div>
+        </div>
+      </div>
 
-</body>
+      <section class="section section-lg" id="about-us" data-type="anchor">
+        <div class="container">
+          <div class="row row-50 justify-content-center justify-content-lg-between">
+            <div class="col-md-6 col-lg-6 col-xl-6">
+              <img class="img-responsive wow img-sombra slideInRight" src="images/fotos/subbanner.jpg" alt="Equipe Mussatec Metrologia trabalhando" width="570" height="368"/>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6">
+              <h4 class="wow-outer"><span class="wow slideInDown">Mussatec Metrologia – Calibração e Manutenção</span></h4>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".05s">A Mussatec Metrologia é um laboratório prestador de serviço de calibração, manutenção em instrumentos de medição e serviço de medição em peças e componentes.</span></p>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".1s">Nossa Missão é oferecer serviços metrológicos de excelência em calibração, manutenção de instrumentos de medição, e medição em peças e componentes.</span></p>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".15s">Atualmente a Mussatec Metrologia oferece serviço de calibração rastreada na grandeza Dimensional, nossos padrões são rastreáveis a Rede Brasileira de Calibração (RBC), contamos com um laboratório moderno que segue as exigências estabelecidas pelos requisitos da ABNT NBR ISO/ IEC 17025.</span></p>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">Oferecemos um suporte técnico especializado para atender às necessidades específicas de sua empresa, conte conosco para suas próximas calibrações e manutenções.</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-lg bg-gray-100" id="company" data-type="anchor">
+        <div class="container">
+          <div class="row row-50 justify-content-center justify-content-lg-between">
+            <div class="col-md-6 col-lg-6 col-xl-6">
+              <div class="swiper-container img-sombra swiper-slider" id="carousel-company" data-loop="true" data-autoplay="3500">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/fotos/Mussatec-7.jpg" class="d-block w-100" alt="Processos da Empresa"></div>
+                  <div class="swiper-slide"><img src="images/fotos/Mussatec-17.jpg" class="d-block w-100" alt="Equipamentos de Metrologia"></div>
+                  <div class="swiper-slide"><img src="images/fotos/Mussatec-19.jpg" class="d-block w-100" alt="Laboratório Mussatec"></div>
+                  <div class="swiper-slide"><img src="images/fotos/Mussatec-20.jpg" class="d-block w-100" alt="Atendimento ao Cliente"></div>
+                  <div class="swiper-slide"><img src="images/fotos/subbanner.jpg" class="d-block w-100" alt="Logística da Empresa"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6">
+              <h4 class="wow-outer"><span class="wow slideInDown">Empresa</span></h4>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".05s">Localizada em Monte Alto interior de São Paulo, a Mussatec Metrologia é sua parceira estratégica em soluções de medição. Nosso objetivo é assegurar a integridade dos seus resultados por meio de serviços especializados de calibração, manutenção de instrumentos e medição de peças, garantindo a conformidade e a precisão que o seu negócio exige.</span></p>
+              <h4 class="wow-outer"><span class="wow slideInDown" data-wow-delay=".1s">Missão</span></h4>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".15s">Oferecer serviços metrológicos de excelência em calibração, manutenção de instrumentos de medição, e medição em peças e componentes.</span></p>
+              <h4 class="wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">Visão</span></h4>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".25s">Atuar no mercado nacional, oferecendo excelência em serviços de metrologia, e ser referência em calibração e manutenção em instrumentos de medição.</span></p>
+              <h4 class="wow-outer"><span class="wow slideInDown" data-wow-delay=".3s">Valores</span></h4>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".35s">Ética e transparência nos serviços prestados, respeito aos nossos clientes e colaboradores.</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-lg text-center" id="services" data-type="anchor">
+        <div class="container">
+          <h3 class="wow-outer"><span class="wow slideInUp">Nossos Serviços</span></h3>
+          <p>Conheça nosso escopo de Calibração na grandeza Dimensional:</p>
+          <div class="row row-50 justify-content-center offset-top-2">
+            
+            <div class="col-md-6 wow-outer">
+              <div class="mussa-accordion-wrapper wow slideInLeft">
+                <div class="mussa-accordion-header" onclick="toggleMussaAccordion(this)">
+                  <h4 class="mussa-accordion-title">Escopo de Fornecimento</h4>
+                  <div class="mussa-toggle-btn">-</div>
+                </div>
+                <div class="mussa-accordion-body active">
+                  <ul class="mussa-check-list text-left">
+                    <li><i class="fa fa-crosshairs"></i> Gravação de códigos nos equipamentos</li>
+                    <li><i class="fa fa-crosshairs"></i> Emissão de Certificados de Calibração com rastreabilidade a padrões nacionais</li>
+                    <li><i class="fa fa-crosshairs"></i> Disponibilidade de acesso online aos certificados e aos padrões utilizados</li>
+                    <li><i class="fa fa-crosshairs"></i> Gerenciamento dos vencimentos das calibrações realizadas</li>
+                    <li><i class="fa fa-crosshairs"></i> Ajustes nos instrumentos (quando passível de ajuste)</li>
+                    <li><i class="fa fa-crosshairs"></i> Verificação do estado do instrumento no recebimento</li>
+                    <li><i class="fa fa-crosshairs"></i> Software de gestão metrológica disponível sem custo para os clientes</li>
+                    <li><i class="fa fa-crosshairs"></i> Avaliação de necessidade de manutenção</li>
+                    <li><i class="fa fa-crosshairs"></i> Comparação com critério de aceitação fornecido pelo cliente</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 wow-outer">
+              <div class="mussa-accordion-wrapper wow slideInRight">
+                <div class="mussa-accordion-header" onclick="toggleMussaAccordion(this)">
+                  <h4 class="mussa-accordion-title">Calibração na Grandeza Dimensional</h4>
+                  <div class="mussa-toggle-btn">+</div>
+                </div>
+                <div class="mussa-accordion-body" style="display: none;">
+                  <div class="row text-left">
+                    <div class="col-sm-6">
+                      <ul class="mussa-check-list">
+                        <li><i class="fa fa-crosshairs"></i> Paquímetros</li>
+                        <li><i class="fa fa-crosshairs"></i> Medidor de Altura</li>
+                        <li><i class="fa fa-crosshairs"></i> Micrômetros</li>
+                        <li><i class="fa fa-crosshairs"></i> Réguas Graduadas</li>
+                        <li><i class="fa fa-crosshairs"></i> Lupas</li>
+                        <li><i class="fa fa-crosshairs"></i> Trenas</li>
+                        <li><i class="fa fa-crosshairs"></i> Relógio Comparador</li>
+                        <li><i class="fa fa-crosshairs"></i> Calibrador de Folga</li>
+                        <li><i class="fa fa-crosshairs"></i> Projetor de Perfil</li>
+                        <li><i class="fa fa-crosshairs"></i> Goniômetro</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6">
+                      <ul class="mussa-check-list">
+                        <li><i class="fa fa-crosshairs"></i> Microscópio</li>
+                        <li><i class="fa fa-crosshairs"></i> Calibrador Tampão</li>
+                        <li><i class="fa fa-crosshairs"></i> Calibrador Anel</li>
+                        <li><i class="fa fa-crosshairs"></i> Esquadro</li>
+                        <li><i class="fa fa-crosshairs"></i> Nível de Bolha</li>
+                        <li><i class="fa fa-crosshairs"></i> Calibre de Solda</li>
+                        <li><i class="fa fa-crosshairs"></i> Rugosímetro</li>
+                        <li><i class="fa fa-crosshairs"></i> Lâminas de Espessura</li>
+                        <li><i class="fa fa-crosshairs"></i> Fita Perimétrica</li>
+                        <li><i class="fa fa-crosshairs"></i> Prumo</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row row-30 offset-top-2 services-grid mt-5">
+            <div class="col-12 col-lg-6 wow-outer">
+              <article class="service-card service-card-refined wow slideInLeft">
+                <div class="service-card-media">
+                  <div class="swiper-container swiper-slider service-swiper" id="carousel1" data-loop="true" data-autoplay="3500">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/fotos/Mussatec-1.jpg" alt="Serviço de calibração em instrumentos de medição"></div>
+                      <div class="swiper-slide"><img src="images/fotos/Mussatec-2.jpg" alt="Processo de calibração dimensional"></div>
+                      <div class="swiper-slide"><img src="images/fotos/Mussatec-3.jpg" alt="Equipamentos de calibração da Mussatec"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="service-card-content">
+                  <h5 class="service-card-title">Calibração</h5>
+                  <p class="service-card-text">Realizamos calibração rastreada à RBC na grandeza dimensional, tanto em nossas instalações quanto no ambiente do cliente.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-lg-6 wow-outer">
+              <article class="service-card service-card-refined wow slideInLeft" data-wow-delay=".05s">
+                <div class="service-card-media">
+                  <div class="swiper-container swiper-slider service-swiper" id="carousel2" data-loop="true" data-autoplay="3500">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/fotos/Mussatec-12.jpg" alt="Serviço de manutenção em instrumentos"></div>
+                      <div class="swiper-slide"><img src="images/fotos/Mussatec-14.jpg" alt="Manutenção técnica de equipamentos de medição"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="service-card-content">
+                  <h5 class="service-card-title">Manutenção</h5>
+                  <p class="service-card-text">Executamos manutenção com análise criteriosa para identificar falhas e apresentar ao cliente um diagnóstico técnico preciso.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-lg-6 wow-outer">
+              <article class="service-card service-card-refined wow slideInLeft" data-wow-delay=".1s">
+                <div class="service-card-media">
+                  <div class="swiper-container swiper-slider service-swiper" id="carousel3" data-loop="true" data-autoplay="3500">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/fotos/Mussatec-18.jpg" alt="Medição de peças e componentes"></div>
+                      <div class="swiper-slide"><img src="images/fotos/Mussatec-24.jpg" alt="Análise dimensional de componentes"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="service-card-content">
+                  <h5 class="service-card-title">Medição de Peças e Componentes</h5>
+                  <p class="service-card-text">Contamos com estrutura metrológica especializada e máquina tridimensional manual Mitutoyo para medições dimensionais precisas.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-lg-6 wow-outer">
+              <article class="service-card service-card-refined wow slideInLeft" data-wow-delay=".15s">
+                <div class="service-card-media">
+                  <div class="swiper-container swiper-slider service-swiper" id="carousel4" data-loop="true" data-autoplay="3500">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/fotos/Mussatec-7.jpg" alt="Serviço de logística para instrumentos"></div>
+                      <div class="swiper-slide"><img src="images/fotos/Mussatec-17.jpg" alt="Coleta programada de instrumentos"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="service-card-content">
+                  <h5 class="service-card-title">Logística</h5>
+                  <p class="service-card-text">Oferecemos coleta e entrega de instrumentos por rotas definidas e programadas conforme a região de atendimento.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-gray-100" id="contact-us" data-type="anchor">
+        <div class="range justify-content-xl-between">
+          <div class="cell-xl-6 align-self-center container">
+            <div class="row">
+              <div class="col-lg-9 cell-inner">
+                <div class="section-lg">
+                  <h3 class="wow-outer"><span class="wow slideInDown">Contato</span></h3>
+                  <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                    <div class="row row-10">
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-first-name">Nome Completo</label>
+                          <input class="form-input" id="contact-first-name" type="text" name="name" data-constraints="@Required">
+                        </div>
+                      </div>
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-email">E-mail</label>
+                          <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                        </div>
+                      </div>
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-phone">Telefone</label>
+                          <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@PhoneNumber @Required">
+                        </div>
+                      </div>
+                      <div class="col-md-6 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-how-know">Como Nos Conheceu?</label>
+                          <select class="form-input" id="contact-how-know" name="how-know" data-constraints="@Required">
+                            <option value="">Selecione</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="youtube">Youtube</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 wow-outer">
+                        <div class="form-wrap wow fadeSlideInUp">
+                          <label class="form-label-outside" for="contact-message">Mensagem</label>
+                          <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="group group-middle mt-4">
+                      <div class="wow-outer">
+                        <button class="button button-primary button-winona wow slideInRight" type="submit">Enviar</button>
+                      </div>
+                      <p>Ou use</p>
+                      <div class="wow-outer">
+                        <a class="button button-primary-outline button-icon button-icon-left button-winona wow slideInLeft" href="https://api.whatsapp.com/send?phone=5516997707791" target="_blank"><span class="icon text-accent mdi mdi-whatsapp"></span>Whatsapp</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cell-xl-5 height-fill wow fadeIn">
+            <iframe src="https://maps.google.com/maps?q=Rua+Julia+Simongine+Chiquitelli,+100+-+Jardim+Folador,+Monte+Alto+-+SP&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0; width: 100%; height: 100%; min-height: 400px;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </section>
+
+      <footer class="section footer-linked bg-gray-700">
+        <div class="footer-linked-main">
+          <div class="container">
+            <div class="row row-50">
+              <div class="col-lg-8">
+                <h4>Mussatec Metrologia</h4>
+                <hr class="offset-right-1">
+                <div class="row row-20">
+                  <div class="col-6 col-sm-6">
+                    <ul class="list list-xs">
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#about-us">Sobre Nós</a></li>
+                      <li><a href="#company">Empresa</a></li>
+                      <li><a href="#services">Serviços</a></li>
+                      <li><a href="#contact-us">Contato</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-sm-6">
+                    <ul class="list list-xs">
+                      <li><span class="icon mdi mdi-facebook"></span><a href="https://www.facebook.com/profile.php?id=61558473458050&mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+                      <li><span class="icon mdi mdi-twitter"></span><a href="https://x.com/marcos_mussato?t=cEkbidGEUmPzhXlYnJvylQ&s=08" target="_blank">Twitter</a></li>
+                      <li><span class="icon mdi mdi-instagram"></span><a href="https://www.instagram.com/mussatecmetrologia/?igsh=bGJkZXNqM2Z3a3g4" target="_blank">Instagram</a></li>
+                      <li><span class="icon mdi mdi-linkedin"></span><a href="https://www.linkedin.com/in/mussatec-metrologia-mussatec-976971304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-4">
+                <h4>Informações de Contato</h4>
+                <hr>
+                <ul class="list-sm">
+                  <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#">Rua Julia Simongine Chiquitelli, 100 <br> Jardim Folador, Monte Alto - SP</a></li>
+                  <li class="object-inline"><span class="icon icon-md mdi mdi-whatsapp text-gray-700"></span>
+                    <ul class="list-0">
+                      <li><a class="link-default" href="https://api.whatsapp.com/send?phone=5516997707791" target="_blank">16-99770-7791</a></li>
+                    </ul>
+                  </li>
+                  <li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:mussatec@outlook.com" target="_blank">mussatec@outlook.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-linked-aside">
+          <div class="container">
+            <p class="rights"><span>© </span><span class="copyright-year">2026</span><span> Todos direitos reservados. | Desenvolvido por <a style="color: #01bdff" href="https://portfolio-sand-gamma-44.vercel.app/" target="_blank">Marcelo Fuentes</a></span></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <div class="preloader"> 
+      <div class="preloader-logo"><img src="images/logo-default-480x80.png" width="240" height="40" alt="Logo Mussatec Metrologia"></div>
+      <div class="preloader-body">
+        <div id="loadingProgressG">
+          <div class="loadingProgressG" id="loadingProgressG_1"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <a href="https://api.whatsapp.com/send?phone=5516997707791" class="whatsapp-float" target="_blank" aria-label="Contato via WhatsApp">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+    
+    <script>
+      function toggleMussaAccordion(headerElement) {
+        var bodyElement = headerElement.nextElementSibling;
+        var toggleBtn = headerElement.querySelector('.mussa-toggle-btn');
+
+        if (bodyElement.classList.contains('active')) {
+          bodyElement.classList.remove('active');
+          bodyElement.style.display = 'none';
+          toggleBtn.textContent = '+';
+        } else {
+          bodyElement.classList.add('active');
+          bodyElement.style.display = 'block';
+          toggleBtn.textContent = '-';
+        }
+      }
+    </script>
+  </body>
 </html>

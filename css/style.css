@@ -2,6 +2,208 @@
 /*
 * Trunk version 2.0.0
 */
+#services {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef4f8 100%);
+}
+
+.services-heading {
+  max-width: 900px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.services-heading h3 {
+  margin-bottom: 14px;
+}
+
+.services-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+.services-grid {
+  margin-top: 45px;
+}
+
+.service-card-refined {
+  display: flex;
+  align-items: stretch;
+  min-height: 360px;
+  height: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #fcfcfc 100%);
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.service-card-refined:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+  border-color: rgba(1, 189, 255, 0.22);
+}
+
+.service-card-media {
+  width: 46%;
+  min-width: 46%;
+  position: relative;
+  background: #eef2f7;
+}
+
+.service-card-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.08), rgba(15, 23, 42, 0.02));
+  pointer-events: none;
+}
+
+.service-card-media .swiper-container,
+.service-card-media .swiper-wrapper,
+.service-card-media .swiper-slide {
+  height: 100%;
+}
+
+.service-card-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-card-content {
+  width: 54%;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.service-card-title {
+  margin: 0 0 18px;
+  min-height: 78px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #24364b;
+  font-weight: 600;
+  position: relative;
+}
+
+.service-card-title::after {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 3px;
+  margin-top: 14px;
+  border-radius: 999px;
+  background: #01bdff;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+}
+
+.service-card-text {
+  margin: 18px 0 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+.service-card .swiper-pagination {
+  bottom: 14px !important;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.service-card .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.service-card .swiper-pagination-bullet-active {
+  background: #01bdff;
+}
+
+@media (max-width: 1199.98px) {
+  .service-card-title {
+    font-size: 30px;
+    min-height: 72px;
+  }
+
+  .service-card-text {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .service-card-refined {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .service-card-media,
+  .service-card-content {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .service-card-media img {
+    min-height: 260px;
+  }
+
+  .service-card-content {
+    padding: 26px 22px 30px;
+  }
+
+  .service-card-title {
+    min-height: auto;
+    font-size: 28px;
+  }
+
+  .service-card-title::after {
+    position: static;
+    margin-top: 12px;
+  }
+
+  .service-card-text {
+    margin-top: 14px;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .services-intro {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service-card-media img {
+    min-height: 220px;
+  }
+
+  .service-card-title {
+    font-size: 24px;
+  }
+
+  .service-card-text {
+    font-size: 16px;
+  }
+
+  .services-intro {
+    font-size: 16px;
+  }
+}
 .whatsapp-float {
     position: fixed;
     bottom: 100px;
@@ -13414,6 +13616,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     to { opacity: 1; transform: translateY(0); }
   }
 
+  
   .mussa-check-list {
     list-style: none;
     padding: 0;
@@ -13488,7 +13691,189 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	text-align: center; /* Centraliza o texto dentro do box-light */
 	height: 540px;
 }
+/* =========================================================
+   SERVICES SECTION IMPROVEMENTS
+========================================================= */
 
+#services {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef4f8 100%);
+}
+
+.services-heading {
+  max-width: 900px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.services-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+.services-grid {
+  margin-top: 45px;
+}
+
+
+/* =========================================================
+   CARD STRUCTURE
+========================================================= */
+
+.service-card-refined {
+  display: flex;
+  align-items: stretch;
+  min-height: 340px;
+  height: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #fcfcfc 100%);
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.service-card-refined:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+  border-color: rgba(1,189,255,.22);
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.service-card-media {
+  width: 46%;
+  min-width: 46%;
+  position: relative;
+  background: #eef2f7;
+}
+
+.service-card-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================================================
+   TEXT AREA
+========================================================= */
+
+.service-card-content {
+  width: 54%;
+  padding: 30px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.service-card-title {
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #24364b;
+  margin: 0 0 14px 0;
+  position: relative;
+}
+
+.service-card-title::after {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 999px;
+  background: #01bdff;
+}
+
+.service-card-text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #6b7280;
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   SWIPER DOTS
+========================================================= */
+
+.service-card .swiper-pagination {
+  bottom: 14px !important;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.service-card .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.service-card .swiper-pagination-bullet-active {
+  background: #01bdff;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1199px) {
+
+  .service-card-title {
+    font-size: 28px;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .service-card-refined {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .service-card-media,
+  .service-card-content {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .service-card-media img {
+    min-height: 240px;
+  }
+
+  .service-card-content {
+    padding: 22px 22px 26px;
+  }
+
+  .service-card-title {
+    font-size: 24px;
+  }
+
+  .service-card-text {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  .service-card-media img {
+    min-height: 200px;
+  }
+
+}
 
 
 
