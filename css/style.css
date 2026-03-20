@@ -5,7 +5,123 @@
 #services {
   background: linear-gradient(180deg, #f8fafc 0%, #eef4f8 100%);
 }
+/* =========================================================
+   CARDS DE PARCEIROS (MAHR / DIGIMESS)
+   ========================================================= */
 
+.partner-card {
+  background: #fdfdfd;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  padding: 30px 40px;
+  position: relative;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.partner-main-logo {
+  max-width: 130px;
+}
+
+.partner-title {
+  color: #1A365D; /* Azul escuro do layout */
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.partner-text {
+  color: #4A5568;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.partner-product-box {
+  border: 2px solid #C49A45; /* Dourado/Bronze */
+  border-radius: 15px;
+  padding: 15px;
+  background: #ffffff;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+}
+
+/* O truque para a imagem sair um pouco da caixa igual no design */
+.product-img {
+  max-width: 90%; 
+  margin-left: -15%;
+  margin-top: -10px;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2)); /* Cria a sombra no próprio PNG */
+}
+
+.brand-logo {
+  max-width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.partner-btn {
+  display: inline-block;
+  border: 1px solid #C49A45;
+  color: #1A365D;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 8px 15px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.partner-btn:hover {
+  background: #C49A45;
+  color: #ffffff;
+}
+
+/* Decoradores de canto (linhas douradas) */
+.card-decor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-color: #C49A45;
+  border-style: solid;
+}
+
+.card-decor-tl {
+  top: 15px;
+  left: 15px;
+  border-width: 2px 0 0 2px; /* Top e Left */
+  border-top-left-radius: 10px;
+}
+
+.card-decor-bl {
+  bottom: 15px;
+  left: 15px;
+  border-width: 0 0 2px 2px; /* Bottom e Left */
+  border-bottom-left-radius: 10px;
+}
+
+/* Responsividade Básica */
+@media (max-width: 575px) {
+  .partner-img-col {
+    margin-top: 20px;
+  }
+  .product-img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
 .services-heading {
   max-width: 900px;
   margin: 0 auto 10px;
