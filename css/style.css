@@ -104,7 +104,7 @@
   height: 3px;
   margin-top: 14px;
   border-radius: 999px;
-  background: #01bdff;
+  
   position: absolute;
   left: 0;
   bottom: -12px;
@@ -130,9 +130,7 @@
   background: rgba(255, 255, 255, 0.85);
 }
 
-.service-card .swiper-pagination-bullet-active {
-  background: #01bdff;
-}
+
 
 @media (max-width: 1199.98px) {
   .service-card-title {
@@ -13784,15 +13782,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   position: relative;
 }
 
-.service-card-title::after {
-  content: "";
-  display: block;
-  width: 52px;
-  height: 3px;
-  margin-top: 10px;
-  border-radius: 999px;
-  background: #01bdff;
-}
+
 
 .service-card-text {
   font-size: 17px;
